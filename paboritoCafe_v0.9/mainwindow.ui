@@ -1,0 +1,4521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1249</width>
+    <height>999</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Paborito Cafe</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <activeon>:/paborito Logo.png</activeon>
+   </iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="0" column="0" colspan="2">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="font">
+       <font>
+        <family>Kozuka Gothic Pr6N B</family>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="HomePage">
+       <layout class="QGridLayout" name="gridLayout_45">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_HomePageEmployeeName">
+            <property name="font">
+             <font>
+              <family>Kozuka Gothic Pr6N B</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_HomePageAccountType">
+            <property name="font">
+             <font>
+              <family>Kozuka Gothic Pr6N B</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Account Type</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_HomePageDate">
+            <property name="font">
+             <font>
+              <family>Kozuka Gothic Pr6N B</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Date</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1" rowspan="2">
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="pushButton_OrderPage">
+              <property name="minimumSize">
+               <size>
+                <width>130</width>
+                <height>130</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 0);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <activeon>:/list.png</activeon>
+               </iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>64</width>
+                <height>64</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+              <property name="default">
+               <bool>false</bool>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_Order">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Orders</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="pushButton_MenuPage">
+              <property name="minimumSize">
+               <size>
+                <width>130</width>
+                <height>130</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 85, 0);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <activeon>:/fast-food.png</activeon>
+               </iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>64</width>
+                <height>64</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <property name="default">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_Menu">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Menu</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="2">
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="pushButton_ReportsPage">
+              <property name="minimumSize">
+               <size>
+                <width>130</width>
+                <height>130</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <activeon>:/folder.png</activeon>
+               </iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>64</width>
+                <height>64</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <property name="default">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_Reports">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Reports</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="3">
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="pushButton_ManageAccounts">
+              <property name="minimumSize">
+               <size>
+                <width>130</width>
+                <height>130</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 0);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <activeon>:/account.png</activeon>
+               </iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>64</width>
+                <height>64</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <property name="default">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_ManageAccounts">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Accounts</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="4">
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="pushButton_Logout">
+              <property name="minimumSize">
+               <size>
+                <width>130</width>
+                <height>130</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 0);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <activeon>:/exit.png</activeon>
+               </iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>64</width>
+                <height>64</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <property name="default">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_Logout">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Log Out</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="2" rowspan="2">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>141</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>148</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0" colspan="3">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="1" column="0">
+           <widget class="QTableView" name="tableView_MenuPage">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 170, 255);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <family>Kozuka Gothic Pr6N B</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Best Sellers!!!</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="OrderPage">
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer_3">
+          <property name="font">
+           <font>
+            <family>MS Shell Dlg 2</family>
+           </font>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>546</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QTabWidget" name="tabWidget_OrderPage">
+          <property name="font">
+           <font>
+            <family>Kozuka Gothic Pr6N B</family>
+            <pointsize>8</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+            <underline>true</underline>
+           </font>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="Orders">
+           <attribute name="title">
+            <string>Orders</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_50">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_49">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_19">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_8">
+                  <property name="font">
+                   <font>
+                    <family>Kozuka Gothic Pr6N B</family>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Dine In/Take Out</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QTableView" name="tableView_OrderList">
+                  <property name="minimumSize">
+                   <size>
+                    <width>335</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Kozuka Gothic Pr6N B</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 170, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <layout class="QGridLayout" name="gridLayout_16">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_OrderTotal">
+                  <property name="font">
+                   <font>
+                    <family>Kozuka Gothic Pr6N B</family>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <italic>false</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Total:</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="lineEdit_OrderTotal">
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <spacer name="horizontalSpacer_6">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="1" rowspan="2">
+             <layout class="QGridLayout" name="gridLayout_12">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_2">
+                <property name="font">
+                 <font>
+                  <family>Kozuka Gothic Pr6N B</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Choose Order</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QGroupBox" name="groupBox_OrderCategory">
+                <property name="maximumSize">
+                 <size>
+                  <width>125</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Kozuka Gothic Pr6N B</family>
+                 </font>
+                </property>
+                <property name="title">
+                 <string>Category</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_13">
+                 <item row="8" column="0">
+                  <widget class="QPushButton" name="pushButton_OrderSpecialty">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <underline>true</underline>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 0, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/restaurant.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="0">
+                  <widget class="QPushButton" name="pushButton_OrderColdDrinks">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <underline>true</underline>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(85, 0, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/frappe.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="0">
+                  <widget class="QPushButton" name="pushButton_OrderHotDrinks">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <underline>true</underline>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/tea-cup.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="14" column="0">
+                  <widget class="QPushButton" name="pushButton_OrderOthers">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <underline>true</underline>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/steak.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QPushButton" name="pushButton_OrderRiceBowls">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <underline>true</underline>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/chinese-food.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QPushButton" name="pushButton_OrderPizza">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <underline>true</underline>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(85, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/pizza.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QPushButton" name="pushButton_OrderFingerFoods">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <underline>true</underline>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/fries.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="0">
+                  <spacer name="verticalSpacer">
+                   <property name="font">
+                    <font>
+                     <family>MS Shell Dlg 2</family>
+                    </font>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QPushButton" name="pushButton_OrderPasta">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <underline>true</underline>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 85, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/pasta.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_12">
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Sunken</enum>
+                   </property>
+                   <property name="text">
+                    <string>Finger Foods</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_5">
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Sunken</enum>
+                   </property>
+                   <property name="text">
+                    <string>Rice Bowls</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="0">
+                  <widget class="QLabel" name="label_22">
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Sunken</enum>
+                   </property>
+                   <property name="text">
+                    <string>Cold Drinks</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="0">
+                  <widget class="QLabel" name="label_21">
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Sunken</enum>
+                   </property>
+                   <property name="text">
+                    <string>Specialty</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="0">
+                  <widget class="QLabel" name="label_23">
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Sunken</enum>
+                   </property>
+                   <property name="text">
+                    <string>Hot Drinks</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="0">
+                  <widget class="QLabel" name="label_14">
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Sunken</enum>
+                   </property>
+                   <property name="text">
+                    <string>Pizza</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QLabel" name="label_13">
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Sunken</enum>
+                   </property>
+                   <property name="text">
+                    <string>Pasta</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="0">
+                  <widget class="QLabel" name="label_24">
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Sunken</enum>
+                   </property>
+                   <property name="text">
+                    <string>Others</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <layout class="QGridLayout" name="gridLayout_6">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>250</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Kozuka Gothic Pr6N B</family>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Cafe Menu</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QTableView" name="tableView_OrderMenu">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>250</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Kozuka Gothic Pr6N B</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 170, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_OrderMenuImage">
+                  <property name="minimumSize">
+                   <size>
+                    <width>120</width>
+                    <height>180</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>250</width>
+                    <height>500</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Kozuka Gothic Pr6N B</family>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Image</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="font">
+               <font>
+                <family>MS Shell Dlg 2</family>
+               </font>
+              </property>
+              <property name="title">
+               <string>Info</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_20">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_18">
+                 <item row="0" column="0">
+                  <layout class="QGridLayout" name="gridLayout_15">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_OrderType">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Order Type</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QComboBox" name="comboBox_OrderType">
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                       <pointsize>13</pointsize>
+                      </font>
+                     </property>
+                     <property name="layoutDirection">
+                      <enum>Qt::LeftToRight</enum>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(85, 170, 0);</string>
+                     </property>
+                     <property name="editable">
+                      <bool>true</bool>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Dine In</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Take Out</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="0" column="1">
+                  <layout class="QGridLayout" name="gridLayout_17">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_6">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Payment Status</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QComboBox" name="comboBox_OrderPaymentStatus">
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                       <pointsize>13</pointsize>
+                      </font>
+                     </property>
+                     <property name="layoutDirection">
+                      <enum>Qt::LeftToRight</enum>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(170, 170, 255);</string>
+                     </property>
+                     <property name="editable">
+                      <bool>true</bool>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Paid</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Unpaid</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <spacer name="verticalSpacer_3">
+                 <property name="font">
+                  <font>
+                   <family>MS Shell Dlg 2</family>
+                  </font>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="0" column="1">
+                <spacer name="horizontalSpacer_4">
+                 <property name="font">
+                  <font>
+                   <family>MS Shell Dlg 2</family>
+                  </font>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>209</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="1" column="1">
+                <spacer name="verticalSpacer_2">
+                 <property name="font">
+                  <font>
+                   <family>MS Shell Dlg 2</family>
+                  </font>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="2" column="0" rowspan="2">
+                <layout class="QGridLayout" name="gridLayout_23">
+                 <item row="0" column="0">
+                  <layout class="QGridLayout" name="gridLayout_21">
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_OrderDate">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Date</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_OrderID">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Order ID</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_OrderCustomer">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>MS Shell Dlg 2</family>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Customer Name</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="label_OrderEmployee">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Employee Name</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="0" column="1">
+                  <layout class="QGridLayout" name="gridLayout_22">
+                   <item row="2" column="0">
+                    <widget class="QLineEdit" name="lineEdit_OrderDate">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLineEdit" name="lineEdit_OrderCustomerName">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QLineEdit" name="lineEdit_OrderID">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLineEdit" name="lineEdit_OrderEmployeeName">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item row="2" column="1">
+                <layout class="QGridLayout" name="gridLayout_26">
+                 <item row="0" column="0">
+                  <layout class="QGridLayout" name="gridLayout_24">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_OrderVAT">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>MS Shell Dlg 2</family>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>VAT</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_OrderDiscount">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>MS Shell Dlg 2</family>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Discount</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_OrderGrandTotal">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>MS Shell Dlg 2</family>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Grand Total</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="0" column="1">
+                  <layout class="QGridLayout" name="gridLayout_25">
+                   <item row="0" column="1">
+                    <widget class="QPushButton" name="pushButton_OrderAddVat">
+                     <property name="maximumSize">
+                      <size>
+                       <width>35</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>MS Shell Dlg 2</family>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(85, 170, 127);</string>
+                     </property>
+                     <property name="text">
+                      <string>%</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QComboBox" name="comboBox_OrderVAT">
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="layoutDirection">
+                      <enum>Qt::LeftToRight</enum>
+                     </property>
+                     <property name="editable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QPushButton" name="pushButton_AddOrderDiscount">
+                     <property name="maximumSize">
+                      <size>
+                       <width>35</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>MS Shell Dlg 2</family>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 170, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string>%</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QComboBox" name="comboBox_OrderDiscount">
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Kozuka Gothic Pr6N B</family>
+                       <pointsize>8</pointsize>
+                      </font>
+                     </property>
+                     <property name="layoutDirection">
+                      <enum>Qt::LeftToRight</enum>
+                     </property>
+                     <property name="editable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QDoubleSpinBox" name="doubleSpinBox_GrandTotal">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="maximum">
+                      <double>999999999.000000000000000</double>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item row="3" column="1">
+                <layout class="QGridLayout" name="gridLayout_14">
+                 <item row="0" column="1">
+                  <widget class="QPushButton" name="pushButton_OrderSubmit">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(85, 170, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>Submit</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QPushButton" name="pushButton_OrderClear">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 85, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Clear</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QPushButton" name="pushButton_OrderPage_HomePage">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 255, 0);</string>
+              </property>
+              <property name="text">
+               <string>Back to Home Page</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="OrderStatus">
+           <attribute name="title">
+            <string>Order Status</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_54">
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_OrderStatus">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_53">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_51">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="pushButton_ChangeView">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <underline>true</underline>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Change View</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QStackedWidget" name="stackedWidget_2">
+                  <property name="currentIndex">
+                   <number>1</number>
+                  </property>
+                  <widget class="QWidget" name="page">
+                   <layout class="QGridLayout" name="gridLayout_52">
+                    <item row="0" column="0">
+                     <widget class="QTableView" name="tableView_OrderStatus">
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(85, 170, 0);</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="page_2">
+                   <layout class="QGridLayout" name="gridLayout_89">
+                    <item row="0" column="0">
+                     <widget class="QScrollArea" name="scrollArea">
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(225, 225, 169);</string>
+                      </property>
+                      <property name="widgetResizable">
+                       <bool>true</bool>
+                      </property>
+                      <widget class="QWidget" name="scrollAreaWidgetContents">
+                       <property name="geometry">
+                        <rect>
+                         <x>0</x>
+                         <y>0</y>
+                         <width>1362</width>
+                         <height>830</height>
+                        </rect>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_88">
+                        <item row="0" column="0" rowspan="2" colspan="2">
+                         <layout class="QGridLayout" name="gridLayout_87">
+                          <item row="0" column="0">
+                           <layout class="QGridLayout" name="gridLayout_85">
+                            <item row="0" column="2">
+                             <layout class="QGridLayout" name="gridLayout_61">
+                              <item row="1" column="0">
+                               <widget class="QTableView" name="tableView_OrderView_2">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>260</width>
+                                  <height>300</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>350</width>
+                                  <height>500</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Kozuka Gothic Pr6N B</family>
+                                  <pointsize>7</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <layout class="QGridLayout" name="gridLayout_63">
+                                <item row="0" column="0">
+                                 <widget class="QPushButton" name="pushButton_ModifyOrder_2">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 85, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Modify</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="1">
+                                 <widget class="QPushButton" name="pushButton_CancelOrder_2">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(85, 170, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Cancel</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0" colspan="2">
+                                 <widget class="QPushButton" name="pushButton_ConfirmOrder_2">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Conifrm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item row="0" column="0">
+                               <layout class="QGridLayout" name="gridLayout_62">
+                                <item row="0" column="0">
+                                 <widget class="QLabel" name="label_CustomerName_2">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>16</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <family>Kozuka Gothic Pr6N B</family>
+                                    <pointsize>8</pointsize>
+                                    <underline>true</underline>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 127);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Customer Name</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0">
+                                 <widget class="QLabel" name="label_Time_2">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>8</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 255, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Time</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                            <item row="0" column="0">
+                             <layout class="QGridLayout" name="gridLayout_57">
+                              <item row="0" column="0">
+                               <layout class="QGridLayout" name="gridLayout_56">
+                                <item row="0" column="0">
+                                 <widget class="QLabel" name="label_CustomerName_0">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>16</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <family>Kozuka Gothic Pr6N B</family>
+                                    <pointsize>8</pointsize>
+                                    <underline>true</underline>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 127);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Customer Name</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0">
+                                 <widget class="QLabel" name="label_Time_0">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>8</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 255, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Time</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item row="1" column="0">
+                               <widget class="QTableView" name="tableView_OrderView_0">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>260</width>
+                                  <height>300</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>350</width>
+                                  <height>500</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Kozuka Gothic Pr6N B</family>
+                                  <pointsize>7</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <layout class="QGridLayout" name="gridLayout_55">
+                                <item row="0" column="0">
+                                 <widget class="QPushButton" name="pushButton_ModifyOrder_0">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 85, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Modify</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="1">
+                                 <widget class="QPushButton" name="pushButton_CancelOrder_0">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(85, 170, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Cancel</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0" colspan="2">
+                                 <widget class="QPushButton" name="pushButton_ConfirmOrder_0">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Conifrm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                            <item row="0" column="1">
+                             <layout class="QGridLayout" name="gridLayout_58">
+                              <item row="0" column="0">
+                               <layout class="QGridLayout" name="gridLayout_59">
+                                <item row="0" column="0">
+                                 <widget class="QLabel" name="label_CustomerName_1">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>16</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <family>Kozuka Gothic Pr6N B</family>
+                                    <pointsize>8</pointsize>
+                                    <underline>true</underline>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 127);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Customer Name</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0">
+                                 <widget class="QLabel" name="label_Time_1">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>8</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 255, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Time</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item row="1" column="0">
+                               <widget class="QTableView" name="tableView_OrderView_1">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>260</width>
+                                  <height>300</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>350</width>
+                                  <height>500</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Kozuka Gothic Pr6N B</family>
+                                  <pointsize>7</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <layout class="QGridLayout" name="gridLayout_60">
+                                <item row="0" column="0">
+                                 <widget class="QPushButton" name="pushButton_ModifyOrder_1">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 85, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Modify</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="1">
+                                 <widget class="QPushButton" name="pushButton_CancelOrder_1">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(85, 170, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Cancel</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0" colspan="2">
+                                 <widget class="QPushButton" name="pushButton_ConfirmOrder_1">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Conifrm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                            <item row="0" column="4">
+                             <layout class="QGridLayout" name="gridLayout_67">
+                              <item row="0" column="0">
+                               <layout class="QGridLayout" name="gridLayout_68">
+                                <item row="0" column="0">
+                                 <widget class="QLabel" name="label_CustomerName_4">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>16</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <family>Kozuka Gothic Pr6N B</family>
+                                    <pointsize>8</pointsize>
+                                    <underline>true</underline>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 127);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Customer Name</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0">
+                                 <widget class="QLabel" name="label_Time_4">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>8</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 255, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Time</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item row="1" column="0">
+                               <widget class="QTableView" name="tableView_OrderView_4">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>260</width>
+                                  <height>300</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>350</width>
+                                  <height>500</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Kozuka Gothic Pr6N B</family>
+                                  <pointsize>7</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <layout class="QGridLayout" name="gridLayout_69">
+                                <item row="0" column="0">
+                                 <widget class="QPushButton" name="pushButton_ModifyOrder_4">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 85, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Modify</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="1">
+                                 <widget class="QPushButton" name="pushButton_CancelOrder_4">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(85, 170, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Cancel</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0" colspan="2">
+                                 <widget class="QPushButton" name="pushButton_ConfirmOrder_4">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Conifrm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                            <item row="0" column="3">
+                             <layout class="QGridLayout" name="gridLayout_64">
+                              <item row="0" column="0">
+                               <layout class="QGridLayout" name="gridLayout_65">
+                                <item row="0" column="0">
+                                 <widget class="QLabel" name="label_CustomerName_3">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>16</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <family>Kozuka Gothic Pr6N B</family>
+                                    <pointsize>8</pointsize>
+                                    <underline>true</underline>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 127);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Customer Name</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0">
+                                 <widget class="QLabel" name="label_Time_3">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>8</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 255, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Time</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item row="1" column="0">
+                               <widget class="QTableView" name="tableView_OrderView_3">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>260</width>
+                                  <height>300</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>350</width>
+                                  <height>500</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Kozuka Gothic Pr6N B</family>
+                                  <pointsize>7</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <layout class="QGridLayout" name="gridLayout_66">
+                                <item row="0" column="0">
+                                 <widget class="QPushButton" name="pushButton_ModifyOrder_3">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 85, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Modify</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="1">
+                                 <widget class="QPushButton" name="pushButton_CancelOrder_3">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(85, 170, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Cancel</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0" colspan="2">
+                                 <widget class="QPushButton" name="pushButton_ConfirmOrder_3">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Conifrm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                           </layout>
+                          </item>
+                          <item row="1" column="0">
+                           <layout class="QGridLayout" name="gridLayout_86">
+                            <item row="0" column="0">
+                             <layout class="QGridLayout" name="gridLayout_70">
+                              <item row="0" column="0">
+                               <layout class="QGridLayout" name="gridLayout_71">
+                                <item row="0" column="0">
+                                 <widget class="QLabel" name="label_CustomerName_5">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>16</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <family>Kozuka Gothic Pr6N B</family>
+                                    <pointsize>8</pointsize>
+                                    <underline>true</underline>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 127);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Customer Name</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0">
+                                 <widget class="QLabel" name="label_Time_5">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>8</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 255, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Time</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item row="1" column="0">
+                               <widget class="QTableView" name="tableView_OrderView_5">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>260</width>
+                                  <height>300</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>350</width>
+                                  <height>500</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Kozuka Gothic Pr6N B</family>
+                                  <pointsize>7</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <layout class="QGridLayout" name="gridLayout_72">
+                                <item row="0" column="0">
+                                 <widget class="QPushButton" name="pushButton_ModifyOrder_5">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 85, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Modify</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="1">
+                                 <widget class="QPushButton" name="pushButton_CancelOrder_5">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(85, 170, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Cancel</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0" colspan="2">
+                                 <widget class="QPushButton" name="pushButton_ConfirmOrder_5">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Conifrm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                            <item row="0" column="1">
+                             <layout class="QGridLayout" name="gridLayout_73">
+                              <item row="0" column="0">
+                               <layout class="QGridLayout" name="gridLayout_74">
+                                <item row="0" column="0">
+                                 <widget class="QLabel" name="label_CustomerName_6">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>16</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <family>Kozuka Gothic Pr6N B</family>
+                                    <pointsize>8</pointsize>
+                                    <underline>true</underline>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 127);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Customer Name</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0">
+                                 <widget class="QLabel" name="label_Time_6">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>8</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 255, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Time</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item row="1" column="0">
+                               <widget class="QTableView" name="tableView_OrderView_6">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>260</width>
+                                  <height>300</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>350</width>
+                                  <height>500</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Kozuka Gothic Pr6N B</family>
+                                  <pointsize>7</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <layout class="QGridLayout" name="gridLayout_75">
+                                <item row="0" column="0">
+                                 <widget class="QPushButton" name="pushButton_ModifyOrder_6">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 85, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Modify</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="1">
+                                 <widget class="QPushButton" name="pushButton_CancelOrder_6">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(85, 170, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Cancel</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0" colspan="2">
+                                 <widget class="QPushButton" name="pushButton_ConfirmOrder_6">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Conifrm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                            <item row="0" column="2">
+                             <layout class="QGridLayout" name="gridLayout_76">
+                              <item row="0" column="0">
+                               <layout class="QGridLayout" name="gridLayout_77">
+                                <item row="0" column="0">
+                                 <widget class="QLabel" name="label_CustomerName_7">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>16</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <family>Kozuka Gothic Pr6N B</family>
+                                    <pointsize>8</pointsize>
+                                    <underline>true</underline>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 127);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Customer Name</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0">
+                                 <widget class="QLabel" name="label_Time_7">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>8</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 255, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Time</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item row="1" column="0">
+                               <widget class="QTableView" name="tableView_OrderView_7">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>260</width>
+                                  <height>300</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>350</width>
+                                  <height>500</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Kozuka Gothic Pr6N B</family>
+                                  <pointsize>7</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <layout class="QGridLayout" name="gridLayout_78">
+                                <item row="0" column="0">
+                                 <widget class="QPushButton" name="pushButton_ModifyOrder_7">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 85, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Modify</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="1">
+                                 <widget class="QPushButton" name="pushButton_CancelOrder_7">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(85, 170, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Cancel</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0" colspan="2">
+                                 <widget class="QPushButton" name="pushButton_ConfirmOrder_7">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Conifrm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                            <item row="0" column="3">
+                             <layout class="QGridLayout" name="gridLayout_79">
+                              <item row="0" column="0">
+                               <layout class="QGridLayout" name="gridLayout_80">
+                                <item row="0" column="0">
+                                 <widget class="QLabel" name="label_CustomerName_8">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>16</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <family>Kozuka Gothic Pr6N B</family>
+                                    <pointsize>8</pointsize>
+                                    <underline>true</underline>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 127);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Customer Name</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0">
+                                 <widget class="QLabel" name="label_Time_8">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>8</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 255, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Time</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item row="1" column="0">
+                               <widget class="QTableView" name="tableView_OrderView_8">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>260</width>
+                                  <height>300</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>350</width>
+                                  <height>500</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Kozuka Gothic Pr6N B</family>
+                                  <pointsize>7</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <layout class="QGridLayout" name="gridLayout_81">
+                                <item row="0" column="0">
+                                 <widget class="QPushButton" name="pushButton_ModifyOrder_8">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 85, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Modify</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="1">
+                                 <widget class="QPushButton" name="pushButton_CancelOrder_8">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(85, 170, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Cancel</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0" colspan="2">
+                                 <widget class="QPushButton" name="pushButton_ConfirmOrder_8">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Conifrm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                            <item row="0" column="4">
+                             <layout class="QGridLayout" name="gridLayout_82">
+                              <item row="0" column="0">
+                               <layout class="QGridLayout" name="gridLayout_83">
+                                <item row="0" column="0">
+                                 <widget class="QLabel" name="label_CustomerName_9">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>0</width>
+                                    <height>0</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>16</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <family>Kozuka Gothic Pr6N B</family>
+                                    <pointsize>8</pointsize>
+                                    <underline>true</underline>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 127);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Customer Name</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0">
+                                 <widget class="QLabel" name="label_Time_9">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>8</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 255, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Time</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                              <item row="1" column="0">
+                               <widget class="QTableView" name="tableView_OrderView_9">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>260</width>
+                                  <height>300</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>350</width>
+                                  <height>500</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>Kozuka Gothic Pr6N B</family>
+                                  <pointsize>7</pointsize>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
+                                 </font>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="2" column="0">
+                               <layout class="QGridLayout" name="gridLayout_84">
+                                <item row="0" column="0">
+                                 <widget class="QPushButton" name="pushButton_ModifyOrder_9">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 85, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Modify</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="1">
+                                 <widget class="QPushButton" name="pushButton_CancelOrder_9">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(85, 170, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Cancel</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="1" column="0" colspan="2">
+                                 <widget class="QPushButton" name="pushButton_ConfirmOrder_9">
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>16777215</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>7</pointsize>
+                                   </font>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">background-color: rgb(255, 170, 0);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Conifrm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </item>
+                        <item row="0" column="2">
+                         <spacer name="horizontalSpacer_9">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item row="1" column="2">
+                         <spacer name="horizontalSpacer_10">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>18</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item row="2" column="0">
+                         <spacer name="verticalSpacer_6">
+                          <property name="orientation">
+                           <enum>Qt::Vertical</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>20</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item row="2" column="1">
+                         <spacer name="verticalSpacer_7">
+                          <property name="orientation">
+                           <enum>Qt::Vertical</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>20</width>
+                            <height>17</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="MenuPage">
+       <layout class="QGridLayout" name="gridLayout_34">
+        <item row="0" column="0" colspan="2">
+         <layout class="QGridLayout" name="gridLayout_33">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_PabMenu">
+            <property name="font">
+             <font>
+              <family>Kozuka Gothic Pr6N B</family>
+              <pointsize>40</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>true</underline>
+              <kerning>false</kerning>
+             </font>
+            </property>
+            <property name="text">
+             <string>Paborito Cafe Menu</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="gridLayout_32">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_29">
+              <item row="0" column="0">
+               <widget class="QGroupBox" name="groupBox_MenuCategory">
+                <property name="font">
+                 <font>
+                  <family>Kozuka Gothic Pr6N B</family>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <italic>false</italic>
+                  <bold>true</bold>
+                  <underline>true</underline>
+                  <strikeout>false</strikeout>
+                  <kerning>false</kerning>
+                 </font>
+                </property>
+                <property name="title">
+                 <string>Category</string>
+                </property>
+                <property name="flat">
+                 <bool>false</bool>
+                </property>
+                <property name="checkable">
+                 <bool>false</bool>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_27">
+                 <item row="12" column="0">
+                  <widget class="QPushButton" name="pushButton_MenuHotDrinls">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                     <kerning>false</kerning>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(85, 255, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/tea-cup.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>48</width>
+                     <height>48</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="0">
+                  <widget class="QPushButton" name="pushButton_MenuColdDrinks">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                     <kerning>false</kerning>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/frappe.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>48</width>
+                     <height>48</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="0">
+                  <widget class="QPushButton" name="pushButton_MenuSpecialty">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                     <kerning>false</kerning>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 85, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/restaurant.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>48</width>
+                     <height>48</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QPushButton" name="pushButton_MenuRiceBowls">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                     <kerning>false</kerning>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/chinese-food.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>48</width>
+                     <height>48</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QPushButton" name="pushButton_MenuPizza">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                     <kerning>false</kerning>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(170, 85, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/pizza.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>48</width>
+                     <height>48</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="14" column="0">
+                  <widget class="QPushButton" name="pushButton_MenuOthers">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                     <kerning>false</kerning>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/steak.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>48</width>
+                     <height>48</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QPushButton" name="pushButton_MenuFingerFoods">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                     <kerning>false</kerning>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 85, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/fries.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>48</width>
+                     <height>48</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QPushButton" name="pushButton_MenuPasta">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                     <kerning>false</kerning>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 85, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <activeon>:/pasta.png</activeon>
+                    </iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>48</width>
+                     <height>48</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="0">
+                  <spacer name="verticalSpacer_4">
+                   <property name="font">
+                    <font>
+                     <family>Kozuka Gothic Pr6N B</family>
+                    </font>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QLabel" name="label_27">
+                   <property name="text">
+                    <string>Pasta</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="0">
+                  <widget class="QLabel" name="label_29">
+                   <property name="text">
+                    <string>Specialty</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_26">
+                   <property name="text">
+                    <string>Finger Foods</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="0">
+                  <widget class="QLabel" name="label_30">
+                   <property name="text">
+                    <string>Cold Drinks</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="13" column="0">
+                  <widget class="QLabel" name="label_31">
+                   <property name="text">
+                    <string>Hot Drinks</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="0">
+                  <widget class="QLabel" name="label_28">
+                   <property name="text">
+                    <string>Pizza</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_25">
+                   <property name="text">
+                    <string>Rice Bowls</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="0">
+                  <widget class="QLabel" name="label_32">
+                   <property name="text">
+                    <string>Others</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <layout class="QGridLayout" name="gridLayout_28">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_MenuTable">
+                  <property name="font">
+                   <font>
+                    <family>Kozuka Gothic Pr6N B</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <italic>false</italic>
+                    <bold>true</bold>
+                    <underline>true</underline>
+                    <kerning>false</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Menu</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QTableView" name="tableView_Menu">
+                  <property name="minimumSize">
+                   <size>
+                    <width>500</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Kozuka Gothic Pr6N B</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(170, 255, 255);</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="1">
+             <spacer name="horizontalSpacer_5">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+               </font>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="2">
+             <layout class="QGridLayout" name="gridLayout_31">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_30">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="pushButton_MenuAdd">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Kozuka Gothic Pr6N B</family>
+                    <pointsize>15</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 0, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>Add</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QPushButton" name="pushButton_MenuDel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Kozuka Gothic Pr6N B</family>
+                    <pointsize>15</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(85, 85, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>Delete</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_MenuImage">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>250</width>
+                  <height>250</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Kozuka Gothic Pr6N B</family>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Image</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer_7">
+          <property name="font">
+           <font>
+            <family>Kozuka Gothic Pr6N B</family>
+           </font>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>990</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButton_MenuHomePage">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Kozuka Gothic Pr6N B</family>
+            <pointsize>10</pointsize>
+            <italic>false</italic>
+            <underline>false</underline>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 170, 127);</string>
+          </property>
+          <property name="text">
+           <string>Back to Home Page</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+       <zorder>pushButton_MenuHomePage</zorder>
+       <zorder>horizontalSpacer_7</zorder>
+      </widget>
+      <widget class="QWidget" name="ManageAccountsPage">
+       <layout class="QGridLayout" name="gridLayout_48">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_20">
+          <property name="font">
+           <font>
+            <family>Kozuka Gothic Pr6N B</family>
+            <pointsize>30</pointsize>
+            <weight>75</weight>
+            <italic>false</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Manage Accounts</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_47">
+          <item row="0" column="0">
+           <widget class="QTableView" name="tableView_ManageAccounts">
+            <property name="font">
+             <font>
+              <family>Kozuka Gothic Pr6N B</family>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(85, 170, 255);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_46">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="pushButton_AddAcount">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 0);</string>
+              </property>
+              <property name="text">
+               <string>Add</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="pushButton_DelAccount">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 85, 127);</string>
+              </property>
+              <property name="text">
+               <string>Del</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <spacer name="verticalSpacer_5">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+               </font>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>188</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_ManageAccountsHomePage">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 85, 0);</string>
+              </property>
+              <property name="text">
+               <string>Back at Home Page</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ReportsPage">
+       <layout class="QGridLayout" name="gridLayout_44">
+        <item row="0" column="0" colspan="3">
+         <layout class="QGridLayout" name="gridLayout_42">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_35">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Paborito Cafe</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_9">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>25</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Sales Summary Report</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QTableView" name="tableView_ReportsSummary">
+            <property name="font">
+             <font>
+              <family>Kozuka Gothic Pr6N B</family>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 0);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="1">
+         <spacer name="horizontalSpacer_8">
+          <property name="font">
+           <font>
+            <family>Kozuka Gothic Pr6N B</family>
+           </font>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>364</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="2">
+         <layout class="QGridLayout" name="gridLayout_41">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_39">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_TotalSales">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>13</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Total Sales:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_TotalDis">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>13</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Total Discount:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_TotalVat">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>13</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Total Vat:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_SalesNet">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>13</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Sales Net</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_40">
+            <item row="1" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_ReportsDiscount">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>14</pointsize>
+                <italic>true</italic>
+               </font>
+              </property>
+              <property name="showGroupSeparator" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="maximum">
+               <double>999999999.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_ReportsSales">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>14</pointsize>
+                <italic>true</italic>
+               </font>
+              </property>
+              <property name="showGroupSeparator" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="maximum">
+               <double>999999999.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_ReportsVat">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>14</pointsize>
+                <italic>true</italic>
+               </font>
+              </property>
+              <property name="showGroupSeparator" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="maximum">
+               <double>999999999.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_ReportsTotal">
+              <property name="font">
+               <font>
+                <family>Kozuka Gothic Pr6N B</family>
+                <pointsize>14</pointsize>
+                <italic>true</italic>
+               </font>
+              </property>
+              <property name="showGroupSeparator" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="maximum">
+               <double>999999999.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton_MonthlyReports">
+          <property name="font">
+           <font>
+            <family>Kozuka Gothic Pr6N B</family>
+            <pointsize>10</pointsize>
+            <underline>true</underline>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(85, 170, 0);</string>
+          </property>
+          <property name="text">
+           <string>Print/Save to PDF ( Monthly Reports)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="pushButton_ReportsHomePage">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Kozuka Gothic Pr6N B</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 85, 255);</string>
+          </property>
+          <property name="text">
+           <string>Back to Home Page</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_ReportsSortBy">
+          <property name="font">
+           <font>
+            <family>Kozuka Gothic Pr6N B</family>
+           </font>
+          </property>
+          <property name="title">
+           <string>Sort By</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_43">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_38">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_36">
+               <item row="0" column="1">
+                <widget class="QLabel" name="label_11">
+                 <property name="font">
+                  <font>
+                   <family>Kozuka Gothic Pr6N B</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                   <underline>true</underline>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Sort by Date</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLabel" name="label_15">
+                 <property name="font">
+                  <font>
+                   <family>Kozuka Gothic Pr6N B</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                   <underline>true</underline>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Sort by Employee</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLabel" name="label_10">
+                 <property name="font">
+                  <font>
+                   <family>Kozuka Gothic Pr6N B</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                   <underline>true</underline>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Sort by Customer Name</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_Reports_EnableDate">
+                 <property name="font">
+                  <font>
+                   <family>Kozuka Gothic Pr6N B</family>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Enable</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="checkBox_Reports_EnableCust">
+                 <property name="font">
+                  <font>
+                   <family>Kozuka Gothic Pr6N B</family>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Enable</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QCheckBox" name="checkBox_Reports_EnableEmp">
+                 <property name="font">
+                  <font>
+                   <family>Kozuka Gothic Pr6N B</family>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Enable</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="1">
+              <layout class="QGridLayout" name="gridLayout_37">
+               <item row="1" column="0">
+                <widget class="QComboBox" name="comboBox_ReportsSortByCustomer">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Kozuka Gothic Pr6N B</family>
+                   <pointsize>10</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QComboBox" name="comboBox_ReportsSortByEmp">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Kozuka Gothic Pr6N B</family>
+                   <pointsize>10</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QComboBox" name="comboBox_ReportsSortByDate">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Kozuka Gothic Pr6N B</family>
+                   <pointsize>10</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="pushButton_Export2ExcelMonthlyReports">
+          <property name="font">
+           <font>
+            <family>Kozuka Gothic Pr6N B</family>
+            <pointsize>10</pointsize>
+            <underline>true</underline>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Save to Excel (Monthly Reports)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1249</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>comboBox_OrderType</tabstop>
+  <tabstop>lineEdit_OrderID</tabstop>
+  <tabstop>lineEdit_OrderCustomerName</tabstop>
+  <tabstop>lineEdit_OrderDate</tabstop>
+  <tabstop>lineEdit_OrderEmployeeName</tabstop>
+  <tabstop>comboBox_OrderVAT</tabstop>
+  <tabstop>comboBox_OrderDiscount</tabstop>
+  <tabstop>comboBox_OrderPaymentStatus</tabstop>
+  <tabstop>pushButton_OrderAddVat</tabstop>
+  <tabstop>pushButton_AddOrderDiscount</tabstop>
+  <tabstop>pushButton_OrderClear</tabstop>
+  <tabstop>pushButton_OrderSubmit</tabstop>
+  <tabstop>pushButton_OrderPage</tabstop>
+  <tabstop>pushButton_Logout</tabstop>
+  <tabstop>pushButton_ReportsPage</tabstop>
+  <tabstop>pushButton_MenuPage</tabstop>
+  <tabstop>tabWidget_OrderPage</tabstop>
+  <tabstop>pushButton_MenuSpecialty</tabstop>
+  <tabstop>pushButton_MenuColdDrinks</tabstop>
+  <tabstop>pushButton_MenuHotDrinls</tabstop>
+  <tabstop>pushButton_MenuOthers</tabstop>
+  <tabstop>pushButton_MenuPizza</tabstop>
+  <tabstop>pushButton_MenuRiceBowls</tabstop>
+  <tabstop>pushButton_MenuFingerFoods</tabstop>
+  <tabstop>pushButton_MenuPasta</tabstop>
+  <tabstop>tableView_Menu</tabstop>
+  <tabstop>pushButton_MenuAdd</tabstop>
+  <tabstop>pushButton_MenuDel</tabstop>
+  <tabstop>pushButton_MenuHomePage</tabstop>
+  <tabstop>tableView_ReportsSummary</tabstop>
+  <tabstop>pushButton_ReportsHomePage</tabstop>
+  <tabstop>pushButton_ManageAccounts</tabstop>
+  <tabstop>tableView_ManageAccounts</tabstop>
+  <tabstop>pushButton_AddAcount</tabstop>
+  <tabstop>pushButton_DelAccount</tabstop>
+  <tabstop>pushButton_ManageAccountsHomePage</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
