@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pics.qrc</file>
+        <file>paborito Logo.png</file>
+        <file>chinese-food.png</file>
+        <file>folder.png</file>
+        <file>frappe.png</file>
+        <file>list.png</file>
+        <file>pasta.png</file>
+        <file>pizza.png</file>
+        <file>restaurant.png</file>
+        <file>steak.png</file>
+        <file>tea-cup.png</file>
+        <file>account.png</file>
+        <file>fast-food.png</file>
+        <file>exit.png</file>
+        <file>fries.png</file>
+    </qresource>
+</RCC>

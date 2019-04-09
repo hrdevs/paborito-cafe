@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>confirmOrderStatus</class>
+ <widget class="QDialog" name="confirmOrderStatus">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>773</width>
+    <height>464</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Confirm Order</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <activeon>:/paborito Logo.png</activeon>
+   </iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="2" column="0">
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>Kozuka Gothic Pr6N B</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Managers Password:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLineEdit" name="lineEdit_ManagerPassword">
+         <property name="font">
+          <font>
+           <family>Kozuka Gothic Pr6N B</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QTableView" name="tableView">
+         <property name="font">
+          <font>
+           <family>Kozuka Gothic Pr6N B</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(85, 170, 255);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_Total">
+         <property name="font">
+          <font>
+           <family>Kozuka Gothic Pr6N B</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="text">
+          <string>Total: </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_OrderID">
+         <property name="font">
+          <font>
+           <family>Kozuka Gothic Pr6N B</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_ManagerPasswordStatus">
+         <property name="font">
+          <font>
+           <family>Kozuka Gothic Pr6N B</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_ConfirmOrder">
+         <property name="font">
+          <font>
+           <family>Kozuka Gothic Pr6N B</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Complete Order</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_ModifyOrder">
+         <property name="font">
+          <font>
+           <family>Kozuka Gothic Pr6N B</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Modify Order</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_CancelOrder">
+         <property name="font">
+          <font>
+           <family>Kozuka Gothic Pr6N B</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Cancel Order</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="pushButton_Close">
+         <property name="font">
+          <font>
+           <family>Kozuka Gothic Pr6N B</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>pushButton_Close</tabstop>
+  <tabstop>pushButton_ModifyOrder</tabstop>
+  <tabstop>pushButton_ConfirmOrder</tabstop>
+  <tabstop>pushButton_CancelOrder</tabstop>
+  <tabstop>tableView</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
